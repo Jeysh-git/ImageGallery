@@ -2,35 +2,34 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="imageGal1.css">
     </head>
     <body onload="defaultImageDisplay()">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <div class = "mainGallery">
 
             <div class ="subGallery" >
                 <div class="c">
-                    <img id="defImage" src="images/capture.jpg" alt="Paris" width="290" height="240px" onclick="myFunction(this);" >
+                    <img id="defImage" src="images/capture.jpg" alt="Paris" width="290px" height="240px" onclick="myFunction(this);" >
                 </div>
             </div>
 
             <div class = "subGallery" >
                 <div class="c">
-                    <img class="otherImages" src="images/coconutTree.jpg" alt="Paris" width="290" height="200px" onclick="myFunction(this);" >
+                    <img class="otherImages" src="images/coconutTree.jpg" alt="Paris" width="290px" height="200px" onclick="myFunction(this);" >
                 </div>
             </div>
 
             <div class ="subGallery" >
                 <div class="c">
-                    <img class="otherImages" src="images/landscape.jpg" alt="Paris" width="290" height="240px" onclick="myFunction(this);" >
+                    <img class="otherImages" src="images/landscape.jpg" alt="Paris" width="290px" height="240px" onclick="myFunction(this);" >
                 </div>
             </div>
 
             <div class = "subGallery" >
                 <div class="c">
-                    <img class="otherImages" src="images/butterfly.jpg" alt="Paris" width="290" height="200px" onclick="myFunction(this);" >
+                    <img class="otherImages" src="images/butterfly.jpg" alt="Paris" width="290px" height="200px" onclick="myFunction(this);" >
                 </div>
             </div>
 
@@ -43,19 +42,19 @@
         </div>
 
         <script>
-            var expandImg = document.getElementById("expandedImg");
+            var ZoomInImage = document.getElementById("expandedImg");
 
             function myFunction(imgs) {
-                expandImg.src = imgs.src;
-                expandImg.width = imgs.width+200;
-                expandImg.height = imgs.height+200;
+                ZoomInImage.src = imgs.src;
+                ZoomInImage.width = imgs.width+150;
+                ZoomInImage.height = imgs.height+150;
             }
 
             function defaultImageDisplay(){
                 var defaultImage = document.getElementById("defImage");
-                expandImg.src = defaultImage.src;
-                expandImg.height=defaultImage.height +200;
-                expandImg.width = defaultImage.width+200;
+                ZoomInImage.src = defaultImage.src;
+                ZoomInImage.height=defaultImage.height +150;
+                ZoomInImage.width = defaultImage.width+150;
             }
 
         </script>
