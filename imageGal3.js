@@ -37,8 +37,8 @@ console.log(subGalleryQueryList)
 
 function highlight(subGalleryElem) {
    // for(var i=0;i<subGalleryQueryList.length;i++){
-       let i=0;
-       while(i<subGalleryQueryList.length){
+       
+   for (var i=0;i<subGalleryQueryList.length;i++){
         if(subGalleryQueryList[i].classList.value==='sub-gallery'){
            // console.log("hi1");
         subGalleryElem.classList.replace('sub-gallery','highlight');
@@ -49,8 +49,14 @@ function highlight(subGalleryElem) {
         console.log("hi2");
         subGalleryQueryList[i].classList.replace('highlight','sub-gallery');
         }
-        i++;
     }
+        // if(subGalleryQueryList[subGalleryQueryList.length-1].classList.value==="sub-gallary"){
+        //     console.log("hellooooo")
+        //     subGalleryQueryList[subGalleryQueryList.length-1].classList.replace('sub-gallary','highlight');
+        // }
+        
+
+    
 }
 
 subGalleryQueryList.forEach(item =>{

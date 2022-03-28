@@ -7,8 +7,9 @@ module.exports = function(grunt) {
             options: {
               sourcemap: true,
               implementation:sass,  
-              compress: false,
-              yuicompress: false,
+              compress: true,
+    compass:true,
+              yuicompress: true,
               style: 'expanded',
             },
             files: {
