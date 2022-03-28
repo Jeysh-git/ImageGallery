@@ -1,61 +1,73 @@
-
-#mainGallery{
-    display:flex;
-    justify-content:space-around;
-    /* width:100%; */
+#mainGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.sub_gallery{
-    border: 2px solid pink;
-    width:300px;
-    height: 250px;
-    display: flex;
-    align-items: center;
+.sub-gallery {
+  border: 2px solid red;
+  width: 300px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.images{
-    height:240px;
-    width:300px;
-    object-fit:contain;
-}
-.c{
-    margin:3px;
-    
-}
-.container{
-    display:flex;
-    justify-content:center;
-    /* align-items: center; */
-    /* border: 1px solid; */
-    margin: 50px;
-    /* width:100%; */
-    
+.highlight {
+  border: 2px solid blue;
+  width: 300px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.sub_container{
-    /* border: 2px solid green; */
-    background-color:blanchedalmond;
-    width:450px;
-    height:450px;
-    display:flex;
-    justify-content:center;
-    
+.images {
+  height: 240px;
+  width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-#expandedImg{
-    object-fit:contain;
-    /* max-width:100%;
-    max-height: 100%; */
-    /* border: 1px solid black; */
-    align-self: center;
-    /* background-color:antiquewhite; */
-   
+.c {
+  margin: 3px;
 }
 
-.highlight{
-    border: 2px solid blue;
-    width:300px;
-    height: 250px;
-    display: flex;
-    align-items: center;
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
 }
+
+.sub-container {
+  background-color: blanchedalmond;
+  width: 450px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#expandedImg {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=imageGal1.css.map */

@@ -1,101 +1,16 @@
 <html>
   <head> 
       <link rel="stylesheet" href="imageGal1.css">
-      <script src="imageGal3.js"></script>
+      
   </head>
   <body>
-        <div id="mainGallery" >
-            <!-- <div class="subGallery"> -->
-                <!-- <img class = "images" src ="images/butterfly.jpg" > -->
-            <!-- </div> -->
-        </div>
+        <div id="mainGallery" ></div>
         <div class="container">
-            <div class="sub_container">
+            <div class="sub-container">
                 <img id="expandedImg">
             </div>
         </div>
 
-        <script>
-            let urlData = ["images/butterfly.jpg", "images/capture.jpg", "images/coconutTree.jpg", "images/landscape.jpg"];
-            //let data = ["images/capture.jpg", "images/coconutTree.jpg", "images/landscape.jpg"];
-            let list = document.getElementById("mainGallery");
-            let subGallaryList = document.getElementsByClassName("sub_gallery");
-            let imageZoom = document.getElementById("expandedImg");
-            let imageList = document.getElementsByClassName("images");
-            
-  
-            urlData.forEach((item) => {
-                let subGalleryElement = document.createElement("div");
-                //let cc = document.createElement("div")  
-                let imageElement = document.createElement("img");
-                subGalleryElement.className = "sub_gallery";
-                //cc.className ="c";
-                imageElement.src = item;
-                imageElement.className = "images";
-                // li.onclick="myFunction(this)";
-                list.append(subGalleryElement);
-                subGalleryElement.appendChild(imageElement);
-            }); 
-
-            let imageQueryList = document.querySelectorAll('.images');
-            console.log(imageQueryList);
-
-            function DisplayZoomImage(imgElem) {
-                // if( event.target.className==="images"||event.target.className==="subGallery"){
-                //   console.log(img);
-                imageZoom.src  =    imgElem.src;
-                imageZoom.width  =    imgElem.width+150;
-                imageZoom.height   =    imgElem.height+150;
-                 
-            }
-            imageQueryList.forEach(item =>{
-                item.addEventListener('click',event =>{
-                    if( event.target.className==="images"||event.target.className==="sub_gallery"){
-                        // console.log(imgs1.item(index))
-                        DisplayZoomImage(item);
-                    }  
-                })
-            })
-            
-            let subGalleryQueryList = document.querySelectorAll('.sub_gallery');
-            //let sbgss = document.getElementsByClassName("subGallery");
-
-            function highlight(subGalleryElem) {
-               // console.log(sbgss[3]);
-                for(var i=0;i<subGalleryQueryList.length;++i){
-                    if(subGalleryQueryList[i].classList.value==='sub_gallery'){
-                    // sbg1.style.borderColor = 'pink';
-                    subGalleryElem.classList.add('highlight')
-              
-                    }
-              
-                    if(subGalleryQueryList[i].classList.value==='sub_gallery highlight'){
-                    //sbg1.classList.remove('highlight')
-                    console.log(i)
-                    subGalleryQueryList[i].classList.remove('highlight');
-                    }
-                }
-            }
-
-            subGalleryQueryList.forEach(item =>{
-                item.addEventListener('click',event =>{
-                    if( event.target.className==="images"||event.target.className==="sub_gallery"){
-                        // console.log(event.target);
-                        // console.log(imgs1.item(index))
-                        highlight(item);
-                    }  
-                        
-                })
-            })
-
-            var DisplayImageOnLoading = function(event){
-                let imageItem = document.querySelector('.images');
-                var subGalleryItem = document.querySelector('.sub_gallery')
-                DisplayZoomImage(imageItem);
-                highlight(subGalleryItem)
-            };  
-            window.addEventListener('load',DisplayImageOnLoading);
-            //for(var i=0;i<imgs.length;i++){
-        </script>
+        <script src="imageGal3.js"></script>
     </body>
 </html>

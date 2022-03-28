@@ -1,10 +1,12 @@
 module.exports = function(grunt) {
+    const sass = require('node-sass')
       grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         sass: {
           dist: {
             options: {
-              sourcemap: false,
+              sourcemap: true,
+              implementation:sass,  
               compress: false,
               yuicompress: false,
               style: 'expanded',
