@@ -1,0 +1,44 @@
+$background-color_1: blanchedalmond;
+
+#mainGallery {
+	display: flex;
+	justify-content: space-around;
+}
+.sub-gallery {
+	border: 2px solid red;
+	width: 300px;
+	height: 250px;
+	display: flex;
+	align-items: center;
+}
+.highlight {
+	border: 2px solid blue;
+	width: 300px;
+	height: 250px;
+	display: flex;
+	align-items: center;
+}
+.images {
+	height: 240px;
+	width: 300px;
+	object-fit: contain;
+}
+.c {
+	margin: 3px;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	margin: 50px;
+}
+.sub-container {
+	background-color: $background-color_1;
+	width: 450px;
+	height: 450px;
+	display: flex;
+	justify-content: center;
+}
+#expandedImg {
+	object-fit: contain;
+	align-self: center;
+}
